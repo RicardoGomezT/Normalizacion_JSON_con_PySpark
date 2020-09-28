@@ -1,0 +1,10 @@
+consumer.app_consumer.transaction_id;con_appcon_transaction_id;String;Estructura_1
+consumer.app_consumer.id;con_appcon_id;String;Estructura_1
+consumer.app_consumer.session_id;con_appcon_session_id;String;Estructura_1
+consumer.device_consumer.id;con_devcon_id;String;Estructura_1
+consumer.device_consumer.user_agent;con_devcon_user_agent;String;Estructura_1
+consumer.device_consumer.locale;con_devcon_locale;String;Estructura_1
+consumer.device_consumer.ip;con_devcon_ip;String;Estructura_1
+consumer.device_consumer.coordinates;con_devcon_coordinates;String;Estructura_1
+consumer.device_consumer.terminal_id;con_devcon_terminal_id;bigint;Estructura_1
+messages.service.service_details;Array11;Array;Estructura_1
