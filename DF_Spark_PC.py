@@ -41,7 +41,7 @@ metadata = sc.textFile( metadata_path ).map( lambda x: x.split(";") ).collect()
 esquema_1= StructType([StructField("json_path", StringType(), True), StructField("nombre_tabla",StringType(), True), StructField("tipo_dato", StringType(), True), StructField("estructura", StringType(), True)])
 DF_parametrizacion = sqlContext.createDataFrame(metadata, esquema_1)
 
-metadata_path="/user/s-aprov_prot/kafka/metadata_maestra.csv"
+metadata_path="./kafka/metadata_maestra.csv"
 metadata_maestra = sc.textFile( metadata_path ).map( lambda x: x.split(";") ).collect()
 esquema_2= StructType([StructField("Topico", StringType(), True), StructField("estructura",StringType(), True), StructField("PathUnico", StringType(), True), StructField("CamposConArrays", StringType(), True), StructField("tabla_1", StringType(), True), StructField("tabla_2", StringType(), True)])
 DF_Maestra = sqlContext.createDataFrame(metadata_maestra, esquema_2)
